@@ -11,7 +11,31 @@ const isPalindrome = function(str) {
 };
 
 const largestPair = function(array) {
-  // your code here - don't forget to return a number!
+  
+  var numbers =  [7,8,2,5];
+
+var everyProduct = [];
+
+
+ for(var i = 0; i < 3; i++){
+   
+    var currentNum = numbers[i];
+   
+    var nextNum = numbers[i + 1];
+         
+    var product = currentNum * nextNum;
+   
+   everyProduct.push(product);
+   everyProduct.sort()
+       
+ }
+
+ function largestPair(everyProduct) {
+  
+      return everyProduct[2];
+ }
+   
+ largestPair(everyProduct[[2]]);
 };
 
 const removeParenth = function(str) {
